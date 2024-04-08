@@ -1,0 +1,39 @@
+.container {
+    max-width: 1280px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.heading {
+    text-align: center;
+    margin: 0;
+    padding: 16px 0px;
+}
+
+.btn {
+    padding: 8px 24px;
+    background-color: transparent;
+    color: black;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    border: 1px solid black;
+    margin-bottom: 16px;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.gallery > img {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
